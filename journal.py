@@ -1,6 +1,12 @@
 import os
 
 def load(name):
+    """
+    this method creates and loads a new journal
+
+    :param name: base name of the journal to load
+    :return: a new journal data structure populated w/ file data
+    """
     data = []
     filename = get_full_pathname(name)
 

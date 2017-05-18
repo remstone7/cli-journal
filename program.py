@@ -33,6 +33,7 @@ def run_event_loop():
 
 def list_entries(data):
     print("Your journal entries: ")
+    #display reverse list
     entries = reversed(data)
     for idx, entry in enumerate(entries):
         print('* [{}] {}'.format(idx+1, entry))
@@ -41,5 +42,5 @@ def add_entry(data):
     text = input("Type your entry, <enter> to exit: ")
     journal.add_entry(text, data)
 
-
-main()
+if __name__ == '__main__':
+    main()
