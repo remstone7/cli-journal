@@ -14,7 +14,7 @@ def run_event_loop():
 
     print('What do you want to do with your journal?')
     cmd = 'EMPTY'
-    journal_name = 'default'
+    journal_name = input('What is the name of your journal: ')
     journal_data = journal.load(journal_name)
 
     while cmd != 'x' and cmd:

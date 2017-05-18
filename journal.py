@@ -14,7 +14,9 @@ def load(name):
         with open(filename) as fin:
             for entry in fin.readlines():
                 data.append(entry.rstrip())
-
+    else:
+        with open(filename, 'w') as f:
+            f.append(data)
     return data
 
 
